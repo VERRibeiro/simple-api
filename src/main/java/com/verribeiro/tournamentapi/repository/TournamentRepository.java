@@ -12,7 +12,7 @@ import com.verribeiro.tournamentapi.model.Tournament;
 
 public interface TournamentRepository extends JpaRepository<Tournament, Long> {
 
-	@Query("SELECT t FROM Tournament t WHERE (:title is null or t.title LIKE :title) AND"
+	@Query("SELECT t FROM Tournament t WHERE (:title is null or t.title LIKE :title%) AND"
 			+ " (:subscription is null or t.subscription = :subscription) AND"
 			+ " (CAST(:dateTournament AS date) is null or t.dateTournament = :dateTournament) AND"
 			+ " (:maxSubscribers = -1 or t.maxSubscribers = :maxSubscribers)")
