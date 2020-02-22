@@ -1,6 +1,6 @@
 # Simple-api
 Api rest com operações básicas na entidade Torneio no endpoint .../api/tournament.
-A api está disponível no endereço: https://tour-simple-api.herokuapp.com/
+A api está disponível no endereço: https://tour-simple-api.herokuapp.com/api/
 # Exemplo de uso
 POST /api/tournament
 Retorna o objeto criado.
